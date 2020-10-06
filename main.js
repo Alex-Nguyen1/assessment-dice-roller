@@ -6,9 +6,10 @@ let resetButton = document.querySelector("#reset-all");
 let count = 0;
 let dieRolls = [];
 let totalRoll = document.querySelector("#sum-rolls");
+let dieSides = document.querySelector("#num-sides");
 
 function rollRandomNumber() {
-    return Math.floor(Math.random() * 6) + 1;
+    return Math.floor(Math.random() * dieSides.value) + 1;
     }
 
 rollButton.addEventListener("click", function() {
